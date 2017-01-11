@@ -1,6 +1,6 @@
 $.ajax({
     type: "GET",
-    url: "http://memosquare.com/memo/csrf_test/",
+    url: "http://localhost:8000/memo/csrf_test/",
     xhrFields: {
         withCredentials: true // for authentication
     },
@@ -15,7 +15,7 @@ $.ajax({
             "content": '<html><img src="http://nv1.tveta.naver.net/libs/1149/1149774/20161229162513-pgAXDR4V.jpg" /></html>',
             "page": 'http://naver.com/',
             "is_private": "True",
-            "category": "new cteate",
+            //"category": null,
             "csrfmiddlewaretoken": data
         };
         function csrfSafeMethod(method) {
@@ -31,7 +31,7 @@ $.ajax({
         });
         $.ajax({
             type: "POST",
-            url: "http://memosquare.com/memo/",
+            url: "http://localhost:8000/memo/",
             data: memo,
             xhrFields: {
                 withCredentials: true // for authentication
