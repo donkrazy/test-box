@@ -15,7 +15,7 @@ $.ajax({
             "content": '<html><img src="http://nv1.tveta.naver.net/libs/1149/1149774/20161229162513-pgAXDR4V.jpg" /></html>',
             "page": 'http://naver.com/',
             "is_private": "True",
-            //"category": null,
+            "category": "",
             "csrfmiddlewaretoken": data
         };
         function csrfSafeMethod(method) {
