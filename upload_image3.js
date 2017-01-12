@@ -9,7 +9,7 @@ xhr.open('POST', '/upload/', true);
 xhr.setRequestHeader("X-CSRFToken", csrf_token);
 xhr.onreadystatechange = function () {
         if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-        	location.href=xhr.responseText;
+        	console.log(xhr.responseText);
         }
     };
 xhr.send(fd);
