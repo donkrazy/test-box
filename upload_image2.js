@@ -8,7 +8,7 @@ $.ajaxSetup({
     }
 });
 $.ajax({
-    url: 'http://localhost:8000/upload/ddd2.gif',
+    url: '/upload/ddd2.gif',
     type: 'PUT',
     data: data,
     cache: false,

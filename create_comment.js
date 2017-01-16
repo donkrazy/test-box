@@ -28,11 +28,12 @@ $.ajaxSetup({
 });
 
 $.ajax({
-    type: "DELETE",
-    url: "/category/2/",
+    type: "POST",
+    url: "/comment/",
     xhrFields: {
         withCredentials: true // for authentication
     },
+    data: {"memo": 67, "content": "created"},
     success: function (response) {
         console.log(response)
     },

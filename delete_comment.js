@@ -29,7 +29,7 @@ $.ajaxSetup({
 
 $.ajax({
     type: "DELETE",
-    url: "/category/2/",
+    url: "/comment/8/",
     xhrFields: {
         withCredentials: true // for authentication
     },

@@ -1,6 +1,6 @@
 $.ajax({
     type: "GET",
-    url: "http://memo-square.com/memo/csrf_test/",
+    url: "/memo/csrf_test/",
     xhrFields: {
         withCredentials: true // for authentication
     },
@@ -31,7 +31,7 @@ $.ajax({
         });
         $.ajax({
             type: "POST",
-            url: "http://memo-square.com/memo/123/",
+            url: "/memo/123/",
             data: memo,
             xhrFields: {
                 withCredentials: true // for authentication

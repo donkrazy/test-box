@@ -29,7 +29,7 @@ $.ajaxSetup({
 
 $.ajax({
     type: "POST",
-    url: "http://memosquare.com/category/2/",
+    url: "/category/31/",
     xhrFields: {
         withCredentials: true // for authentication
     },

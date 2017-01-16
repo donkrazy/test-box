@@ -4,7 +4,7 @@ var image = 'dddddddd';
 data.append('file', image)
 data.append('csrfmiddlewaretoken', csrf_token)
 $.ajax({
-    url: 'http://localhost:8000/upload/ddd2.gif',
+    url: '/upload/ddd2.gif',
     type: 'PUT',
     data: data,
     cache: false,
