@@ -29,7 +29,7 @@ $.ajaxSetup({
 
 $.ajax({
     type: "POST",
-    url: "/category/31/",
+    url: "/category/19/",
     xhrFields: {
         withCredentials: true // for authentication
     },

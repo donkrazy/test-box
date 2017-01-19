@@ -11,12 +11,12 @@ $.ajax({
     success: function (data) {
     	var csrftoken = data;
         var memo = {
-            "title": 'dddzz',
-            "content": 'zzz',
-            "page": 'http://nav1er.com/',
-            "is_private": true,
-            "category": null,
-            "csrfmiddlewaretoken": data
+            title: 'dddzz',
+            content: 'zzz',
+            page: 'http://nav1er.com/',
+            is_private: true,
+            category_name: '123',
+            csrfmiddlewaretoken: data
         };
         function csrfSafeMethod(method) {
             // these HTTP methods do not require CSRF protection
@@ -31,7 +31,7 @@ $.ajax({
         });
         $.ajax({
             type: "POST",
-            url: "/memo/123/",
+            url: "/memo/79/",
             data: memo,
             xhrFields: {
                 withCredentials: true // for authentication

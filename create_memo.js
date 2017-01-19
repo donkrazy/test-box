@@ -11,12 +11,11 @@ $.ajax({
     success: function (data) {
     	var csrftoken = data;
         var memo = {
-            "title": 'dddzz',
-            "content": '<html><img src="http://nv1.tveta.naver.net/libs/1149/1149774/20161229162513-pgAXDR4V.jpg" /></html> <img src="http://img.naver.net/static/newsstand/up/2014/0715/330.gif" />',
-            "page": 'http://naver.com/',
-            "is_private": "True",
-            "category": "",
-            "csrfmiddlewaretoken": data
+            title: 'dddzzewewzz123123',
+            content: '<html><img src="http://nv1.tveta.naver.net/libs/1149/1149774/20161229162513-pgAXDR4V.jpg" /></html> <img src="http://img.naver.net/static/newsstand/up/2014/0715/330.gif" />',
+            page: 'http://navernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernavernaver.com/',
+            is_private: false,
+            category_name: "    ",
         };
         function csrfSafeMethod(method) {
             // these HTTP methods do not require CSRF protection

@@ -33,7 +33,7 @@ $.ajax({
     xhrFields: {
         withCredentials: true // for authentication
     },
-    data: {"memo": 67, "content": "created"},
+    data: {"memo_pk": 67, "content": "created"},
     success: function (response) {
         console.log(response)
     },
