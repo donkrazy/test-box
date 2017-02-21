@@ -1,0 +1,20 @@
+<style>
+span.marker {
+    width: 20px;
+    height: 20px;
+    background-image: url('marker.png');
+    position: absolute;
+}
+</style>
+<div id="image-wrapper">
+    <img src="file:///home/yee/workspace/test/test.png" alt=""/>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+$(function() {
+	var target = $('#image-wrapper');
+	var top = 64;
+	var left = 93;
+	$('<span class="marker"/>').css({ top: top, left: left }).appendTo(target);
+});
+</script>
