@@ -1,4 +1,7 @@
 <style>
+*{
+	margin: 0px;
+}
 span.marker {
     width: 20px;
     height: 20px;
@@ -7,14 +10,34 @@ span.marker {
 }
 </style>
 <div id="image-wrapper">
-    <img src="file:///home/yee/workspace/test/test.png" alt=""/>
+    <img src="file:///home/yee/workspace/test-box/shelf_map/test.png" alt=""/>
 </div>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script>
+var pivot_list = [
+	{left: 92, top: 64, row: 1, col: 'A'},
+	{left: 280, top: 64, row: 1, col: 'H'},
+	{left: 280, top: 444, row: 9, col: 'H'},
+]
+
+function find_pivot(row, col){
+	// find pivot from right bottom side
+	for(var i=pivot_list.length-1; i>0; i--){
+		var pivot = pivot_list[i];
+		if(row >= pivot.row && col >= pivot.col){
+			return pivot;
+		}
+		else{
+			continue;
+		}
+	}
+};
+
 $(function() {
+	var row = 10;
+	var col = 'L';
+	var pivot = find_pivot(row, col);
 	var target = $('#image-wrapper');
-	var top = 64;
-	var left = 93;
-	$('<span class="marker"/>').css({ top: top, left: left }).appendTo(target);
+	$('<span class="marker"/>').css({ left: pivot.left , top: pivot.top }).appendTo(target);
 });
 </script>
